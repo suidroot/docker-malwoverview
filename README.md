@@ -8,9 +8,9 @@ Docker conatiner for [malwoveriew](https://github.com/alexandreborges/malwovervi
 
 ## Example usage
 
-`docker run -it --rm -v "$HOME:/root" -v "$(pwd)":/data -w /data suidroot/malwoverview /usr/local/bin/malwoverview -f file -v 1 -a 1`
+`docker run -it --rm -v "$HOME:/root" -v "$(pwd)":/data -w /data suidroot/malwoverview /usr/local/bin/malwoverview.py -f file -v 1 -a 1`
 
 ## Example alias to add to your rc file
-`alias malwoverview='docker run -it --rm -v "$HOME:/root" -v "$(pwd)":/data -w /data suidroot/malwoverview /usr/local/bin/malwoverview'`
+`alias malwoverview='docker run -it --rm -v "$HOME:/root" -v "$(pwd)":/data -w /data suidroot/malwoverview /usr/local/bin/malwoverview.py'`
 
 Example alias usage: `malwoverview -f file -v 1 -a 1`
